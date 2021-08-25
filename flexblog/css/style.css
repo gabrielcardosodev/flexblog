@@ -256,6 +256,52 @@ img {
   text-align: center;
 }
 
+/* quality */
+.quality {
+  max-width: 960px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quality-item {
+  flex: 1 1 300px;
+  margin: 20px 10px;
+}
+
+.quality-item h2 {
+  font-size: 2.25em;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+}
+
+.quality-item h2::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+  background: #2c70ff;
+}
+
+.quality-item:nth-child(3n + 1) h2::before {
+  background: #ae81ff;
+}
+
+.quality-item:nth-child(3n + 2) h2::before {
+  background: #f9265e;
+}
+
+.quality-item:nth-child(3n + 3) h2::before {
+  background: #66d9eb;
+}
+
+.quality-item p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  color: #7c7c7c;
+}
+
 @media (max-width: 800px) {
   .price {
     padding-left: 10px;
